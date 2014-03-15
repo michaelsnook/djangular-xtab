@@ -5,6 +5,7 @@ from rest_framework.permissions import AllowAny
 from .permissions import IsStaffOrTargetUser
 from . import authentication, serializers  # see previous post[1] for user serializer.
 from rest_framework import serializers 
+# 3/15 http://richardtier.com/2014/03/15/authenticate-using-django-rest-framework-endpoint-and-angularjs/
 from django.contrib.auth import login, logout
  
 # 2/25 http://richardtier.com/2014/02/25/django-rest-framework-user-endpoint/
