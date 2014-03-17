@@ -1,20 +1,20 @@
-function checkCredentials(username, password){
-  function setHeader(xhr) {
-    // as per HTTP authentication spec [1], credentials must be
-    // encoded in base64. Lets use window.btoa [2]
-    xhr.setRequestHeader ("Authorization", "Basic " +
-                          btoa(username + ':' password));
-  }
- 
-  $.ajax({type: "POST",  url: "/api/auth/",  beforeSend: setHeader}).
-    fail(function(resp){
-      console.log('bad credentials.')
-    }).
-    done(function(resp){
-      console.log('welcome ' + resp.email)
-    });
-
-}
+//function checkCredentials(username, password){
+//  function setHeader(xhr) {
+//    // as per HTTP authentication spec [1], credentials must be
+//    // encoded in base64. Lets use window.btoa [2]
+//    xhr.setRequestHeader ("Authorization", "Basic " +
+//                          btoa(username + ':' password));
+//  }
+// 
+//  $.ajax({type: "POST",  url: "/api/auth/",  beforeSend: setHeader}).
+//    fail(function(resp){
+//      console.log('bad credentials.')
+//    }).
+//    done(function(resp){
+//      console.log('welcome ' + resp.email)
+//    });
+//
+//}
 
 // pass in bad credentials...
 //checkCredentials('AzureDiamond', 'password');
